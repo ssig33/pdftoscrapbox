@@ -11,7 +11,7 @@ const GM_get = (url)=>{
   return new Promise((r)=>{
     const method = "GET";
     const onload = (res)=> r(res);
-    GM_xmlhttpRequest({ method, url, onload });
+    GM_xmlhttpRequest({ method, url, onload,withCredentials: true });
   });
 }
 
