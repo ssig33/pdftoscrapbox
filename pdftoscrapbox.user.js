@@ -5,7 +5,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://ssig33.github.io/pdftoscrapbox
+// @match        https://ssig33.github.io/pdftoscrapbox/*
 // ==/UserScript==
 
 const GM_get = (url)=>{
