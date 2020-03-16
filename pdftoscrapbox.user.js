@@ -79,7 +79,7 @@ const GM_get = (url)=>{
         page ++;
         span.textContent = `${page} / ${pdf.numPages}`;
       }
-      const urls = pages.map(url => `[${url}]`);
+      const urls = pages.map(url => `[[${url}]]`);
       urls.unshift(file.name);
       window.open(`https://scrapbox.io/${document.querySelector('input').value}/new?body=${encodeURIComponent(urls.join("\n"))}`);
     }); 
