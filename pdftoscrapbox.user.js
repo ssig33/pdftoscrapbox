@@ -1,12 +1,13 @@
 // ==UserScript==
 // @grant        GM_xmlhttpRequest
-// @name         New Userscript
+// @name         PDF to Scrapbox user.js
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        http://localhost:5000/
+// @match        https://ssig33.github.io/pdftoscrapbox
 // ==/UserScript==
+
 const GM_get = (url)=>{
   return new Promise((r)=>{
     const method = "GET";
