@@ -19,5 +19,12 @@
     <style>
       #drop{width:200; height:200; background-color: red }
     </style>
+    <script>
+      const input = document.querySelector('input');
+      input.addEventListener('change', (e)=>{
+        localStorage.project = e.target.value;
+      });
+      input.value = localStorage.project || '';
+    </script>
   </body>
 </html>
