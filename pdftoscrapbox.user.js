@@ -60,12 +60,12 @@ const GM_get = (url)=>{
 
     drop.addEventListener('drop', async (e)=>{
       e.preventDefault();
-      pdfjsLib.cMapUrl = '/cmaps/';
-      pdfjsLib.cMapPacked = true;
+      PDFJS.cMapUrl = '/cmaps/';
+      PDFJS.cMapPacked = true;
       const file = event.dataTransfer.files[0];
       console.log(file);
       const obj = await read(file);
-      const pdf = await pdfjsLib.getDocument(obj);
+      const pdf = await PDFJS.getDocument(obj);
 
       console.log(pdf.numPages);
 

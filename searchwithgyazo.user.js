@@ -2,7 +2,7 @@
 // @grant        GM_xmlhttpRequest
 // @name         Search with Gyazo
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      5.0
 // @description  try to take over the world!
 // @author       You
 // @match        https://scrapbox.io/*
