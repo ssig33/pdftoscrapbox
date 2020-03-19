@@ -2,7 +2,7 @@
 // @grant        GM_xmlhttpRequest
 // @name         PDF to Scrapbox user.js
 // @namespace    http://tampermonkey.net/
-// @version      3.0
+// @version      4.0
 // @description  try to take over the world!
 // @author       You
 // @match        https://ssig33.github.io/pdftoscrapbox/*
@@ -60,7 +60,7 @@ const GM_get = (url)=>{
 
     drop.addEventListener('drop', async (e)=>{
       e.preventDefault();
-      PDFJS.cMapUrl = '/cmaps/';
+      PDFJS.cMapUrl = './cmaps/';
       PDFJS.cMapPacked = true;
       const file = event.dataTransfer.files[0];
       console.log(file);
