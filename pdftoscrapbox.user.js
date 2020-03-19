@@ -2,7 +2,7 @@
 // @grant        GM_xmlhttpRequest
 // @name         PDF to Scrapbox user.js
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      3.0
 // @description  try to take over the world!
 // @author       You
 // @match        https://ssig33.github.io/pdftoscrapbox/*
