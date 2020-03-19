@@ -60,6 +60,8 @@ const GM_get = (url)=>{
 
     drop.addEventListener('drop', async (e)=>{
       e.preventDefault();
+      pdfjsLib.cMapUrl = '/cmaps/';
+      pdfjsLib.cMapPacked = true;
       const file = event.dataTransfer.files[0];
       console.log(file);
       const obj = await read(file);
