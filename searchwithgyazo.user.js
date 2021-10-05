@@ -2,7 +2,7 @@
 // @grant        GM_xmlhttpRequest
 // @name         Search with Gyazo
 // @namespace    http://tampermonkey.net/
-// @version      5.0
+// @version      5.1
 // @description  try to take over the world!
 // @author       You
 // @match        https://scrapbox.io/*
@@ -41,7 +41,7 @@ const GM_get = (url)=>{
                 </div>
                 <div style="flex:1">
                   <div class="title-with-description">${page.title}</div>
-                  <div class="description"><span>${page.descriptions[0]}</span>
+                  <div class="description"><span>${page.words[0]}</span>
                 </div>
                 </div>
               </a>
